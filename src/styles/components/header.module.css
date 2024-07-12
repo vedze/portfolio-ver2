@@ -1,9 +1,21 @@
 .header {
   display: flex;
-  justify-content: center;
-  margin: 10px;
+  justify-content: space-between;
   position: sticky;
+  padding: 20px;
   top: 0;
 
-  color: white;
+  background-color: rgba(248, 247, 245, 0.9);
+  border-bottom: 2px solid #cecece;
+}
+
+.headerLogo {
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.headerMenu {
+  display: flex;
+  margin-right: 20px;
+  gap: 3rem;
 }
