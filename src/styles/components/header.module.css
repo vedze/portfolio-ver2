@@ -11,11 +11,18 @@
 
 .headerLogo {
   margin-left: 20px;
+
+  color: #545758;
+  font-size: 18px;
   font-weight: 500;
 }
 
 .headerMenu {
   display: flex;
-  margin-right: 20px;
-  gap: 3rem;
+  margin-right: 50px;
+  gap: 4rem;
+
+  color: #9f9f9f;
+  font-size: 15px;
+  font-weight: 300;
 }

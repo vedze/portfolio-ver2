@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <div className={styles.header}>
       <Link href="#" className={styles.headerLogo}>
-        LOGO
+        LEE JIEUN
       </Link>
       <div className={styles.headerMenu}>
         <Link href="/#home">Home</Link>
