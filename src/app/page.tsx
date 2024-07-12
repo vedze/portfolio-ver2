@@ -8,15 +8,15 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main>
+    <div>
       <HomePage />
-      <div>
+      <main>
         <Header />
         <ProjectsPage />
         <ContactPage />
         <EtcPage />
         <Footer />
-      </div>
-    </main>
+      </main>
+    </div>
   );
 }

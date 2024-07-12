@@ -1,13 +1,16 @@
+import { homeConstants } from "@/constants/constants";
+import styles from "@/styles/container/homefooter.module.css";
+
 export default function HomeFooter() {
   return (
-    <div>
-      <div>
-        phone: 010-0000-0000
+    <div className={styles.homeFooter}>
+      <span>
+        {homeConstants.PHONE_NUM}
         <br />
-        email: 00@naver.com
-      </div>
-      <div>▼</div>
-      <div>last updated: 2000.00.00</div>
+        {homeConstants.EMAIL_ADD}
+      </span>
+      <span>▼</span>
+      <span>last updated: {homeConstants.LAST_UPDATED}</span>
     </div>
   );
 }
