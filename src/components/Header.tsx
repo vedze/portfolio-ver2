@@ -1,3 +1,5 @@
+import styles from "@/styles/components/header.module.css";
+
 export default function Header() {
-  return <div>Header Section</div>;
+  return <div className={styles.header}>Header Section</div>;
 }
