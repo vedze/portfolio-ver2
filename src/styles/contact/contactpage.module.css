@@ -20,6 +20,11 @@
 
 .contactMsg {
   font-size: 22px;
+  font-weight: 600;
   color: darkgrey;
   margin-bottom: 10px;
+}
+
+.contactMsg.clicked {
+  color: rgb(39, 153, 58);
 }
