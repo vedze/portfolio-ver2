@@ -1,3 +1,5 @@
+import styles from "@/styles/page.module.css";
+
 import HomePage from "./home/page";
 import AboutPage from "./about/page";
 import ContactPage from "./contact/page";
@@ -10,8 +12,8 @@ export default function Home() {
   return (
     <div>
       <HomePage />
-      <main>
-        <Header />
+      <Header />
+      <main className={styles.main}>
         <ProjectsPage />
         <ContactPage />
         <EtcPage />
