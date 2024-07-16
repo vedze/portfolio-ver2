@@ -1,4 +1,4 @@
-export const homeConstants = {
+export const personalCons = {
   PHONE_NUM: "010-8894-2386",
   EMAIL_ADD: "2zeun1116@naver.com",
   LAST_UPDATED: "2024.07.12",
