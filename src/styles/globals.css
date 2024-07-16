@@ -18,6 +18,8 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+
+  scroll-behavior: smooth;
 }
 
 /* Invisible scrollbar */

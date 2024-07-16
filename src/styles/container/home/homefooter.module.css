@@ -1,0 +1,7 @@
+.homeFooter {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: self-end;
+  margin: 40px;
+}
