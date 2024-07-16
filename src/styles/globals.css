@@ -1,4 +1,7 @@
-html,
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   /* display: flex;
   flex-direction: column;
@@ -15,8 +18,6 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-
-  scroll-behavior: smooth;
 }
 
 /* Invisible scrollbar */

@@ -1,12 +1,25 @@
 .contactContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
-  width: 100vw;
+  width: 70%;
+  max-width: 1170px;
+  margin: 0 auto;
 }
 
-.homeContent {
-  flex: 1;
+.contactEmail {
+  font-size: 55px;
+  font-weight: bold;
+  margin-bottom: 70px;
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.contactMsg {
+  font-size: 22px;
+  color: darkgrey;
+  margin-bottom: 10px;
 }

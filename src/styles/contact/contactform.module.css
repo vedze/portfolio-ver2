@@ -1,0 +1,68 @@
+.contactContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inputGroup {
+  position: relative;
+  margin-top: 40px;
+  border-bottom: 2px solid darkgrey;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+  width: 100%;
+  border: none;
+  background: none;
+  padding-left: 10px;
+  padding-bottom: 10px;
+
+  position: relative;
+  z-index: 1; /* label 위에서도 클릭가능 */
+
+  font-size: 16px;
+  font-family: var(--font-pretendard);
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: #aaaaaa;
+  }
+
+  &:focus ~ label,
+  &:valid ~ label {
+    font-size: 16px;
+    bottom: 40px;
+    color: #666;
+    font-weight: bold;
+  }
+}
+
+.inputGroup textarea {
+  resize: none;
+}
+
+.inputGroup label {
+  position: absolute;
+  color: darkgrey;
+  left: 10px;
+  font-size: 20px;
+  bottom: 10px;
+  transition: all 0.2s;
+}
+
+.contactContent button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  color: darkgrey;
+  font-size: 16px;
+  font-family: var(--font-pretendard);
+}
