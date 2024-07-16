@@ -1,5 +1,5 @@
 import { homeConstants } from "@/constants/constants";
-import styles from "@/styles/container/home/homefooter.module.css";
+import styles from "@/styles/home/homefooter.module.css";
 
 export default function HomeFooter() {
   return (

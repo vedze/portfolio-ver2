@@ -1,4 +1,4 @@
-import styles from "@/styles/container/home/homeheader.module.css";
+import styles from "@/styles/home/homeheader.module.css";
 import Link from "next/link";
 import { homeConstants } from "@/constants/constants";
 
