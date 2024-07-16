@@ -3,7 +3,7 @@
 import styles from "@/styles/contact/contactform.module.css";
 import { useState, useRef } from "react";
 
-interface IContactData {
+interface IContactDataType {
   from: string;
   title: string;
   text: string;
@@ -16,7 +16,8 @@ const initContactData = {
 };
 
 export default function ContactForm() {
-  const [contactData, setContactData] = useState<IContactData>(initContactData);
+  const [contactData, setContactData] =
+    useState<IContactDataType>(initContactData);
 
   // 입력값 업데이트
   const handleChange = (
@@ -35,6 +36,7 @@ export default function ContactForm() {
     // 이메일 전송 로직
   };
 
+  // 반응형 textarea
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const handleTextarea = () => {
     if (textareaRef.current) {

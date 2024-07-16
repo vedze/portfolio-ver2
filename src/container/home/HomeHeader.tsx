@@ -1,26 +1,26 @@
 import styles from "@/styles/home/homeheader.module.css";
 import Link from "next/link";
-import { homeConstants } from "@/constants/constants";
+import { personalCons } from "@/data/constants";
 
 export default function HomeHeader() {
   return (
     <div className={styles.homeHeader}>
       <Link
-        href={homeConstants.GIT_LINK}
+        href={personalCons.GIT_LINK}
         target="blank"
         className={styles.headerLink}
       >
         Github
       </Link>
       <Link
-        href={homeConstants.BLOG_LINK}
+        href={personalCons.BLOG_LINK}
         target="blank"
         className={styles.headerLink}
       >
         Blog
       </Link>
       <span className={styles.headerLink}>
-        <Link href={homeConstants.RESUME_LINK} target="blank">
+        <Link href={personalCons.RESUME_LINK} target="blank">
           Resume
         </Link>
         <div className={styles.headerLinkResume}>

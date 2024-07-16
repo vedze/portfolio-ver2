@@ -1,16 +1,16 @@
-import { homeConstants } from "@/constants/constants";
+import { personalCons } from "@/data/constants";
 import styles from "@/styles/home/homefooter.module.css";
 
 export default function HomeFooter() {
   return (
     <div className={styles.homeFooter}>
       <span>
-        {homeConstants.PHONE_NUM}
+        {personalCons.PHONE_NUM}
         <br />
-        {homeConstants.EMAIL_ADD}
+        {personalCons.EMAIL_ADD}
       </span>
       <span>▼</span>
-      <span>last updated: {homeConstants.LAST_UPDATED}</span>
+      <span>last updated: {personalCons.LAST_UPDATED}</span>
     </div>
   );
 }
