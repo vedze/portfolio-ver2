@@ -2,10 +2,20 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 80%;
-  padding: 50px;
-  padding-bottom: 100px;
-  margin: 0 auto;
+  width: 100%;
+  padding: 4rem 0;
+  margin-top: 1rem;
+}
 
-  font-size: 20px;
+.section span {
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  &:nth-child(1) {
+    color: #959595;
+  }
+
+  &:nth-child(2) {
+    color: #4e4e4e;
+  }
 }
