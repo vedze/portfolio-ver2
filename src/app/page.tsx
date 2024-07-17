@@ -3,7 +3,6 @@ import AboutPage from "./about/page";
 import ContactPage from "./contact/page";
 import ProjectsPage from "./projects/page";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -16,7 +15,7 @@ export default function Home() {
         <ContactPage />
       </section>
       <footer>
-        <Footer />
+        <div>© 2024. Lee Jieun All rights reserved.</div>
       </footer>
     </main>
   );
