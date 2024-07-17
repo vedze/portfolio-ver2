@@ -14,7 +14,7 @@
 }
 
 .headerLogo {
-  font-size: 1.5rem;
+  font-size: 24px;
 }
 
 .headerMenu {
@@ -22,5 +22,5 @@
   flex-direction: row;
   gap: 3rem;
 
-  font-size: 1.2rem;
+  font-size: 19px;
 }
