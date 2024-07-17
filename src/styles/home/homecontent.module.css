@@ -5,7 +5,7 @@
   justify-content: center;
 
   gap: 30px;
-  margin: 0 70px;
+  margin: 0 7.5rem;
 }
 
 .homeGreetings {
@@ -25,7 +25,7 @@
 
 @media (max-width: 1024px) {
   .homeContent {
-    margin: 0 50px;
+    margin: 0 3.5rem;
   }
   .homeGreetings {
     font-size: 40px;
@@ -37,7 +37,7 @@
 
 @media (max-width: 768px) {
   .homeContent {
-    margin: 0 30px;
+    margin: 0 1.9rem;
   }
   .homeGreetings {
     font-size: 38px;
@@ -50,7 +50,7 @@
 
 @media (max-width: 480px) {
   .homeContent {
-    margin: 0 10px;
+    margin: 0;
   }
   .homeGreetings {
     font-size: 30px;
