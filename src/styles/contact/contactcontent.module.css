@@ -1,0 +1,26 @@
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+.email {
+  font-size: 66px;
+  font-weight: bold;
+  margin-bottom: 3rem;
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.msg {
+  font-size: 30px;
+  font-weight: 600;
+  color: darkgrey;
+}
+
+.msg.clicked {
+  color: rgba(62, 136, 62, 0.827);
+}

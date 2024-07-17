@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "@/styles/contact/contactpage.module.css";
+import styles from "@/styles/contact/contactcontent.module.css";
 import ContactForm from "@/container/contact/ContactForm";
 import { useState } from "react";
 import { personalCons } from "@/data/constants";
@@ -23,13 +23,13 @@ export default function ContactContent() {
 
   return (
     <div id="contact" className={styles.contactContainer}>
-      <div className={`${styles.contactMsg} ${isCopy ? styles.clicked : ""}`}>
+      <div className={`${styles.msg} ${isCopy ? styles.clicked : ""}`}>
         {isCopy ? "Success!" : "click to copy!"}
       </div>
-      <div className={styles.contactEmail} onClick={onClick}>
+      <div className={styles.email} onClick={onClick}>
         {personalCons.EMAIL_ADD}
       </div>
-      <div className={styles.contactMsg}>or send it directly</div>
+      <div className={styles.msg}>or send it directly!</div>
       <ContactForm />
     </div>
   );

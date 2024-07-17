@@ -38,7 +38,7 @@ section {
   min-height: 100vh;
   width: 100vw;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 7rem;
 
   background-color: rgba(247, 243, 244, 0.8);
 }
@@ -49,7 +49,7 @@ footer {
   padding: 2rem 0;
   border: none;
 
-  background-color: rgba(248, 244, 245, 0.8);
+  background-color: rgba(247, 243, 244, 0.8);
 }
 
 /* ::-webkit-scrollbar {

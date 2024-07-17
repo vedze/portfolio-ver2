@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   width: auto;
-  margin: 0 150px;
+  margin: 0 9rem;
 }
 
 .headerLink {
@@ -23,7 +23,7 @@
 
 @media (max-width: 1024px) {
   .homeHeader {
-    margin: 0 80px;
+    margin: 0 5rem;
   }
   .headerLink {
     font-size: 20px;
@@ -34,7 +34,7 @@
 }
 @media (max-width: 768px) {
   .homeHeader {
-    margin: 0 60px;
+    margin: 0 3.5rem;
   }
   .headerLink {
     font-size: 18px;
@@ -45,7 +45,7 @@
 }
 @media (max-width: 480px) {
   .homeHeader {
-    margin: 0 20px;
+    margin: 0 1.2rem;
   }
   .headerLink {
     font-size: 15px;
