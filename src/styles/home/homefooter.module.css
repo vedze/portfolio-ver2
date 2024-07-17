@@ -1,7 +1,34 @@
 .homeFooter {
   display: flex;
-  flex: 1;
+  justify-content: center;
   justify-content: space-between;
   align-items: self-end;
-  margin: 40px;
+  margin: 0 30px;
+}
+
+.homeFooter span {
+  padding: 0 10px;
+  font-size: 18px;
+  word-break: break-all;
+}
+@media (max-width: 1024px) {
+  .homeFooter span {
+    font-size: 17px;
+  }
+}
+@media (max-width: 768px) {
+  .homeFooter {
+    margin: 0 20px;
+  }
+  .homeFooter span {
+    font-size: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .homeFooter {
+    margin: 0;
+  }
+  .homeFooter span {
+    font-size: 12px;
+  }
 }
