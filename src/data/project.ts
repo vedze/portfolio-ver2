@@ -14,8 +14,8 @@ export const projects: IProjectType[] = [
     date: "2024년 7월 11일 - 진행중",
     summaries: [
       "개인 포트폴리오 제작 프로젝트입니다.",
-      "포트폴리오 만들기 힘드러",
-      "포트폴리오오오오오오",
+      "포트폴리오 summary 1",
+      "포트폴리오 summary 2",
     ],
     skills: ["React", "TypeScript", "NextJS"],
     links: ["github link"],
