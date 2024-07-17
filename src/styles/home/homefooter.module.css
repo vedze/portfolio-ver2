@@ -1,7 +1,41 @@
 .homeFooter {
   display: flex;
-  flex: 1;
+  justify-content: center;
   justify-content: space-between;
   align-items: self-end;
-  margin: 40px;
+  margin: 1rem 7rem;
+}
+
+.homeFooter span {
+  padding: 0 10px;
+  font-size: 18px;
+  word-break: break-all;
+}
+
+@media (max-width: 1024px) {
+  .homeFooter {
+    margin: 1rem 3rem;
+  }
+  .homeFooter span {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  .homeFooter {
+    margin: 0.5rem 1.3rem;
+  }
+  .homeFooter span {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .homeFooter {
+    margin: 0;
+  }
+  .homeFooter span {
+    font-size: 12px;
+    padding: 0 0.3rem;
+  }
 }

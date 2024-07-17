@@ -1,15 +1,15 @@
 import styles from "@/styles/components/section.module.css";
 
 interface ISection {
-  sectionNum: string;
-  sectionName: string;
+  num: string;
+  name: string;
 }
 
-export default function Section({ sectionNum, sectionName }: ISection) {
+export default function Section({ num, name }: ISection) {
   return (
     <div className={styles.section}>
-      <span>{sectionNum}</span>
-      <span>{sectionName}</span>
+      <span>{num}</span>
+      <span>{name}</span>
     </div>
   );
 }

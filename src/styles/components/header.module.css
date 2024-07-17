@@ -1,28 +1,26 @@
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: sticky;
-  padding: 20px;
+  padding: 2rem 9.7rem;
+  margin-bottom: 2rem;
+  width: 100vw;
   top: 0;
 
-  background-color: rgba(248, 247, 245, 0.9);
-  border-bottom: 2px solid #cecece;
+  /* fix: 반응형 */
+  /* background-color: rgba(248, 244, 245, 0.5); */
+  backdrop-filter: blur(10px);
 }
 
 .headerLogo {
-  margin-left: 20px;
-
-  color: #545758;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 24px;
 }
 
 .headerMenu {
   display: flex;
-  margin-right: 50px;
-  gap: 4rem;
+  flex-direction: row;
+  gap: 3rem;
 
-  color: #9f9f9f;
-  font-size: 15px;
-  font-weight: 300;
+  font-size: 19px;
 }
