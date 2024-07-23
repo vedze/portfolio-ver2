@@ -1,14 +1,19 @@
+import styles from "@/styles/projects/projectscontent.module.css";
 import { projects } from "@/data/project";
 
 export default function ProjectsContent() {
   return (
     <div>
-      <h3>테스트 해봅니다~</h3>
       {projects.map((project, i) => (
         <div key={i}>
-          <div>{project.type}</div>
-          <div>{project.title}</div>
-          <div>{project.date}</div>
+          <h2>{project.type}</h2>
+          <h1>{project.title}</h1>
+          <p>{project.date}</p>
+          <ul>
+            {project.summaries.map((summary, i) => (
+              <li key={i}>{summary}</li>
+            ))}
+          </ul>
         </div>
       ))}
     </div>

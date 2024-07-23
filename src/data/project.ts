@@ -31,14 +31,14 @@ export const projects: ProjectType[] = [
     type: "personal",
     title: "Project 3",
     date: "2024.05",
-    summaries: ["Project 3 입니다. 테스트용 더미데이터 입니다."],
+    summaries: ["Project 3 입니다.", "테스트용 더미데이터 입니다."],
     skills: ["React"],
   },
   {
     type: "personal",
     title: "Project 4",
     date: "2024.02",
-    summaries: ["Project 4 입니다. 테스트용 더미데이터 입니다."],
+    summaries: ["Project 4 입니다.", "테스트용 더미데이터 입니다."],
     skills: ["React", "TypeScript", "NextJS"],
   },
 ];
