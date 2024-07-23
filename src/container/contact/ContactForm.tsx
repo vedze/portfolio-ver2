@@ -1,9 +1,10 @@
 "use client";
 
+import { SendContactEmail } from "@/app/api/send-email";
 import styles from "@/styles/contact/contactform.module.css";
 import { useState, useRef } from "react";
 
-interface IContactDataType {
+interface ContactDataType {
   from: string;
   title: string;
   text: string;
@@ -17,7 +18,7 @@ const initContactData = {
 
 export default function ContactForm() {
   const [contactData, setContactData] =
-    useState<IContactDataType>(initContactData);
+    useState<ContactDataType>(initContactData);
 
   // 입력값 업데이트
   const handleChange = (
@@ -30,10 +31,16 @@ export default function ContactForm() {
   };
 
   // form handler
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     // console.log("data: ", contactData); -> ok
     e.preventDefault();
-    // 이메일 전송 로직
+    try {
+      await SendContactEmail(contactData);
+      console.log("이메일 전송에 성공하였습니다.");
+      setContactData(initContactData); // 입력칸 초기화
+    } catch (error) {
+      console.error("이메일 전송에 실패하였습니다: ", error);
+    }
   };
 
   // 반응형 textarea
@@ -41,9 +48,7 @@ export default function ContactForm() {
   const handleTextarea = () => {
     if (textareaRef.current) {
       textareaRef.current.style.height = "auto";
-      textareaRef.current.style.height = `${
-        textareaRef.current.scrollHeight - 11.5
-      }px`;
+      textareaRef.current.style.height = `${textareaRef.current.scrollHeight}px`;
     }
   };
 
@@ -57,7 +62,7 @@ export default function ContactForm() {
           placeholder="이메일 또는 연락처를 남겨주세요"
           required
         />
-        <label>보내는 분</label>
+        <label htmlFor="from">보내는 분</label>
       </div>
       <div className={styles.inputGroup}>
         <input
@@ -67,7 +72,7 @@ export default function ContactForm() {
           placeholder="제목을 입력해주세요"
           required
         />
-        <label>제목</label>
+        <label htmlFor="title">제목</label>
       </div>
       <div className={styles.inputGroup}>
         <textarea
@@ -79,7 +84,7 @@ export default function ContactForm() {
           rows={1}
           required
         />
-        <label>내용</label>
+        <label htmlFor="text">내용</label>
       </div>
       <button type="submit">이메일 보내기</button>
     </form>

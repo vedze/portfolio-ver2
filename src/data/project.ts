@@ -1,4 +1,4 @@
-export interface IProjectType {
+export interface ProjectType {
   type: string;
   title: string;
   date: string;
@@ -7,7 +7,7 @@ export interface IProjectType {
   links?: string[];
 }
 
-export const projects: IProjectType[] = [
+export const projects: ProjectType[] = [
   {
     type: "개인 프로젝트",
     title: "개인 포트폴리오 사이트",
