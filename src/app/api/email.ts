@@ -1,6 +1,6 @@
 import nodemailer from "nodemailer";
 
-interface EmailForm {
+export interface EmailForm {
   from: string;
   title: string;
   text: string;
@@ -23,7 +23,7 @@ export function ContactEmailForm({ from, title, text }: EmailForm) {
       user: process.env.GOOGLE_EMAIL,
       pass: process.env.GOOGLE_PWD,
     },
-    logger: true,
+    // logger: true,
   });
 
   // mailing option
@@ -39,5 +39,11 @@ export function ContactEmailForm({ from, title, text }: EmailForm) {
     `,
   };
 
-  return transporter.sendMail(contactEmail);
+  return transporter.sendMail(contactEmail, (err, info) => {
+    if (err) {
+      console.error("오류 발생: ", err);
+    } else {
+      console.log("이메일 전송 성공: ", info.response);
+    }
+  });
 }

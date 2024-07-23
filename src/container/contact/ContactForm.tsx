@@ -1,5 +1,6 @@
 "use client";
 
+import { SendContactEmail } from "@/app/api/send-email";
 import styles from "@/styles/contact/contactform.module.css";
 import { useState, useRef } from "react";
 
@@ -33,7 +34,7 @@ export default function ContactForm() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     // console.log("data: ", contactData); -> ok
     e.preventDefault();
-    // 이메일 전송 로직
+    SendContactEmail(contactData);
   };
 
   // 반응형 textarea
@@ -55,7 +56,7 @@ export default function ContactForm() {
           placeholder="이메일 또는 연락처를 남겨주세요"
           required
         />
-        <label>보내는 분</label>
+        <label htmlFor="from">보내는 분</label>
       </div>
       <div className={styles.inputGroup}>
         <input
@@ -65,7 +66,7 @@ export default function ContactForm() {
           placeholder="제목을 입력해주세요"
           required
         />
-        <label>제목</label>
+        <label htmlFor="title">제목</label>
       </div>
       <div className={styles.inputGroup}>
         <textarea
@@ -77,7 +78,7 @@ export default function ContactForm() {
           rows={1}
           required
         />
-        <label>내용</label>
+        <label htmlFor="text">내용</label>
       </div>
       <button type="submit">이메일 보내기</button>
     </form>
