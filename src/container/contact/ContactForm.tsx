@@ -3,7 +3,7 @@
 import styles from "@/styles/contact/contactform.module.css";
 import { useState, useRef } from "react";
 
-interface IContactDataType {
+interface ContactDataType {
   from: string;
   title: string;
   text: string;
@@ -17,7 +17,7 @@ const initContactData = {
 
 export default function ContactForm() {
   const [contactData, setContactData] =
-    useState<IContactDataType>(initContactData);
+    useState<ContactDataType>(initContactData);
 
   // 입력값 업데이트
   const handleChange = (
@@ -41,9 +41,7 @@ export default function ContactForm() {
   const handleTextarea = () => {
     if (textareaRef.current) {
       textareaRef.current.style.height = "auto";
-      textareaRef.current.style.height = `${
-        textareaRef.current.scrollHeight - 11.5
-      }px`;
+      textareaRef.current.style.height = `${textareaRef.current.scrollHeight}px`;
     }
   };
 
