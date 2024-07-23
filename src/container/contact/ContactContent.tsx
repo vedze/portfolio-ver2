@@ -14,7 +14,7 @@ export default function ContactContent() {
       setIsCopy(true);
       setTimeout(() => {
         setIsCopy(false);
-      }, 5000);
+      }, 4000);
     } catch (error) {
       alert("copy denied :(");
       console.log("copy error: ", error);

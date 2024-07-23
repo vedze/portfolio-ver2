@@ -59,7 +59,7 @@ export default function ContactForm() {
           id="from"
           type="text"
           onChange={handleChange}
-          placeholder="이메일 또는 연락처를 남겨주세요"
+          placeholder="이메일을 입력해주세요"
           required
         />
         <label htmlFor="from">보내는 분</label>
@@ -71,6 +71,7 @@ export default function ContactForm() {
           onChange={handleChange}
           placeholder="제목을 입력해주세요"
           required
+          autoComplete="off"
         />
         <label htmlFor="title">제목</label>
       </div>
@@ -83,6 +84,7 @@ export default function ContactForm() {
           ref={textareaRef}
           rows={1}
           required
+          autoComplete="off"
         />
         <label htmlFor="text">내용</label>
       </div>
