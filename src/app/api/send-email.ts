@@ -1,14 +1,24 @@
 import { EmailForm } from "./email";
 
 export async function SendContactEmail(contactEmail: EmailForm) {
-  const response = await fetch("/api/contact", {
-    method: "POST",
-    body: JSON.stringify(contactEmail),
-    headers: { "Content-Type": "application/json" },
-  });
+  try {
+    // console.log("contact Email: ", contactEmail); -> ok
 
-  const data = await response.json();
-  console.log("data: ", data);
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      body: JSON.stringify(contactEmail),
+      headers: { "Content-Type": "application/json" },
+    });
 
-  return data;
+    const data = await response.json();
+
+    if (!response.ok) {
+      throw new Error(data.message || "서버 요청에 실패하였습니다.");
+    }
+
+    return data;
+  } catch (error) {
+    console.error("Fetch error: ", error);
+    throw error;
+  }
 }

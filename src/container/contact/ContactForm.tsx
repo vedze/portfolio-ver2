@@ -31,10 +31,16 @@ export default function ContactForm() {
   };
 
   // form handler
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     // console.log("data: ", contactData); -> ok
     e.preventDefault();
-    SendContactEmail(contactData);
+    try {
+      await SendContactEmail(contactData);
+      console.log("이메일 전송에 성공하였습니다.");
+      setContactData(initContactData); // 입력칸 초기화
+    } catch (error) {
+      console.error("이메일 전송에 실패하였습니다: ", error);
+    }
   };
 
   // 반응형 textarea
