@@ -1,11 +1,10 @@
-import styles from "@/styles/contact/contactpage.module.css";
-
+import styles from "@/styles/pages.module.css";
 import Section from "@/components/Section";
 import ContactContent from "@/container/contact/ContactContent";
 
 export default function ContactPage() {
   return (
-    <div className={styles.contactPage}>
+    <div id="contact" className={styles.commonPage}>
       <Section num="03" name="Contact" />
       <ContactContent />
     </div>

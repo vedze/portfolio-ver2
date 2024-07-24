@@ -1,5 +1,4 @@
-import styles from "@/styles/home/homepage.module.css";
-
+import styles from "@/styles/pages.module.css";
 import HomeHeader from "@/container/home/HomeHeader";
 import HomeContent from "@/container/home/HomeContent";
 import HomeFooter from "@/container/home/HomeFooter";
