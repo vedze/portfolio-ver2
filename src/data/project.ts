@@ -5,6 +5,7 @@ export interface ProjectType {
   summaries: string[];
   skills: string[];
   links?: string[];
+  imgs?: string[];
 }
 
 export const projects: ProjectType[] = [
@@ -19,6 +20,7 @@ export const projects: ProjectType[] = [
     ],
     skills: ["React", "TypeScript", "NextJS"],
     links: ["github link"],
+    imgs: ["/images/projects/portfolio-1.jpg"],
   },
   {
     type: "팀 프로젝트",

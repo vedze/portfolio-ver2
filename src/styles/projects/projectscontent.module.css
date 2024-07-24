@@ -1,0 +1,40 @@
+.project {
+  margin-bottom: 5rem;
+}
+
+.titleSection,
+.summarySection,
+.skillSection {
+  margin-bottom: 2rem;
+}
+
+/* Title Section */
+.titleSection p {
+  font-size: 25px;
+}
+.titleSection h1 {
+  font-size: 45px;
+  padding: 0.5rem 0 0 0;
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+.titleSection time {
+  font-size: 20px;
+}
+
+.summarySection p,
+.skillSection p,
+.linkSection p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 23px;
+}
+
+.project h2 {
+  font-size: 30px;
+  font-weight: 650;
+  margin-bottom: 0.5rem;
+}
