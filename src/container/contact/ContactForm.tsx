@@ -38,6 +38,9 @@ export default function ContactForm() {
       await SendContactEmail(contactData);
       console.log("이메일 전송에 성공하였습니다.");
       setContactData(initContactData); // 입력칸 초기화
+      if (textareaRef.current) {
+        textareaRef.current.style.height = "auto";
+      }
     } catch (error) {
       console.error("이메일 전송에 실패하였습니다: ", error);
     }
@@ -58,6 +61,7 @@ export default function ContactForm() {
         <input
           id="from"
           type="text"
+          value={contactData.from}
           onChange={handleChange}
           placeholder="이메일을 입력해주세요"
           required
@@ -68,6 +72,7 @@ export default function ContactForm() {
         <input
           id="title"
           type="text"
+          value={contactData.title}
           onChange={handleChange}
           placeholder="제목을 입력해주세요"
           required
@@ -78,6 +83,7 @@ export default function ContactForm() {
       <div className={styles.inputGroup}>
         <textarea
           id="text"
+          value={contactData.text}
           onChange={handleChange}
           onInput={handleTextarea}
           placeholder="내용을 입력해주세요"
