@@ -1,5 +1,16 @@
-.project {
+.projectContainer {
+  display: flex;
   margin-bottom: 5rem;
+}
+
+.project {
+  flex: 2;
+}
+
+.projectImg {
+  flex: 1;
+  align-self: flex-end;
+  max-width: 500px;
 }
 
 .titleSection,

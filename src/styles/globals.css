@@ -40,7 +40,7 @@ section {
   margin: 0 auto;
   padding: 0 7rem;
 
-  background-color: rgba(247, 243, 244, 0.8);
+  background-color: rgba(247, 243, 244, 0.9);
 }
 
 footer {
@@ -51,7 +51,7 @@ footer {
   padding: 2rem 0;
   border: none;
 
-  background-color: rgba(247, 243, 244, 0.8);
+  background-color: rgba(247, 243, 244, 0.9);
 }
 
 /* ::-webkit-scrollbar {
