@@ -14,7 +14,7 @@ export default function ContactContent() {
       setIsCopy(true);
       setTimeout(() => {
         setIsCopy(false);
-      }, 5000);
+      }, 4000);
     } catch (error) {
       alert("copy denied :(");
       console.log("copy error: ", error);
@@ -22,7 +22,7 @@ export default function ContactContent() {
   };
 
   return (
-    <div id="contact" className={styles.contactContainer}>
+    <div id="contact">
       <div className={`${styles.msg} ${isCopy ? styles.clicked : ""}`}>
         {isCopy ? "Success!" : "click to copy!"}
       </div>

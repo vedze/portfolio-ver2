@@ -2,11 +2,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  margin-bottom: 5rem;
 }
 
 .inputGroup {
   position: relative;
-  margin-top: 50px;
+  margin-top: 5rem;
   border-bottom: 2px solid darkgrey;
   transition: all 0.2s;
 }
@@ -26,7 +28,7 @@
   position: relative;
   z-index: 1; /* label 위에서도 클릭가능 */
 
-  font-size: 16px;
+  font-size: 20px;
   font-family: var(--font-pretendard);
 
   &:focus {
@@ -49,8 +51,8 @@
 .inputGroup input {
   &:focus ~ label,
   &:valid ~ label {
-    font-size: 16px;
-    bottom: 40px;
+    font-size: 20px;
+    bottom: 3rem;
     color: #666;
     font-weight: bold;
   }
@@ -71,19 +73,20 @@
 
   &:focus ~ label,
   &:valid ~ label {
-    font-size: 16px;
+    font-size: 20px;
     bottom: calc(100% + 10px);
     color: #666;
     font-weight: bold;
   }
   margin-bottom: -5px;
+  line-height: 2rem;
 }
 
 .inputGroup label {
   position: absolute;
   color: darkgrey;
   left: 10px;
-  font-size: 20px;
+  font-size: 25px;
   bottom: 10px;
   transition: all 0.2s;
 }
@@ -91,12 +94,12 @@
 .contactContent button {
   display: inline-block;
   padding: 10px 20px;
-  margin-top: 20px;
+  margin-top: 2rem;
   border: none;
   background: none;
   cursor: pointer;
 
   color: darkgrey;
-  font-size: 16px;
+  font-size: 20px;
   font-family: var(--font-pretendard);
 }
