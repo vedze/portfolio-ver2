@@ -4,6 +4,10 @@ import { SendContactEmail } from "@/app/api/send-email";
 import styles from "@/styles/contact/contactform.module.css";
 import { useState, useRef } from "react";
 
+interface ContactFormProps {
+  sendStatus: (status: "success" | "fail" | null) => void;
+}
+
 interface ContactDataType {
   from: string;
   title: string;
@@ -16,7 +20,7 @@ const initContactData = {
   text: "",
 };
 
-export default function ContactForm() {
+export default function ContactForm({ sendStatus }: ContactFormProps) {
   const [contactData, setContactData] =
     useState<ContactDataType>(initContactData);
   const [isEmailValid, setIsEmailValid] = useState(true);
@@ -24,6 +28,7 @@ export default function ContactForm() {
   // 이메일 유효성 검사
   // [Aa~Zz,0~9,._-중 하나 이상]@[동일].[도메인은 Aa~Zz 2개이상으로 구성된 문자열] + 대소문자 구분 x
   const emailRegExp = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,}$/i;
+
   // 입력값 업데이트
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -60,9 +65,13 @@ export default function ContactForm() {
         textareaRef.current.style.height = "auto";
       }
       setIsEmailValid(true); // 유효성 검사 초기화(true)
+      sendStatus("success");
     } catch (error) {
       console.error("이메일 전송에 실패하였습니다: ", error);
+      sendStatus("fail");
     }
+
+    setTimeout(() => sendStatus(null), 5000);
   };
 
   // 반응형 textarea
