@@ -19,21 +19,39 @@ const initContactData = {
 export default function ContactForm() {
   const [contactData, setContactData] =
     useState<ContactDataType>(initContactData);
+  const [isEmailValid, setIsEmailValid] = useState(true);
 
+  // 이메일 유효성 검사
+  // [Aa~Zz,0~9,._-중 하나 이상]@[동일].[도메인은 Aa~Zz 2개이상으로 구성된 문자열] + 대소문자 구분 x
+  const emailRegExp = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,}$/i;
   // 입력값 업데이트
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
-    // console.log(e.target.id);
-    // console.log(e.target.value);
     const { id, value } = e.target;
     setContactData({ ...contactData, [id]: value });
+
+    // from value가 비워져있으면 valid true, 채워져있으면 valid test로 넘김
+    if (id === "from") {
+      if (value === "") {
+        setIsEmailValid(true);
+      } else {
+        setIsEmailValid(emailRegExp.test(value));
+      }
+    }
   };
 
   // form handler
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     // console.log("data: ", contactData); -> ok
     e.preventDefault();
+
+    // 유효성검사 통과 못했으면 submit 종료
+    if (!isEmailValid) {
+      setIsEmailValid(false);
+      return;
+    }
+
     try {
       await SendContactEmail(contactData);
       console.log("이메일 전송에 성공하였습니다.");
@@ -41,6 +59,7 @@ export default function ContactForm() {
       if (textareaRef.current) {
         textareaRef.current.style.height = "auto";
       }
+      setIsEmailValid(true); // 유효성 검사 초기화(true)
     } catch (error) {
       console.error("이메일 전송에 실패하였습니다: ", error);
     }
@@ -68,6 +87,9 @@ export default function ContactForm() {
         />
         <label htmlFor="from">보내는 분</label>
       </div>
+      {!isEmailValid && (
+        <p className={styles.errorText}>유효한 이메일 주소를 입력해주세요.</p>
+      )}
       <div className={styles.inputGroup}>
         <input
           id="title"
