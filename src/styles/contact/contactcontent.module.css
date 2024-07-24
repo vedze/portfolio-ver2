@@ -15,6 +15,11 @@
   color: darkgrey;
 }
 
-.msg.clicked {
-  color: rgba(62, 136, 62, 0.827);
+.msg.copied,
+.msg.success {
+  color: rgba(62, 136, 62, 0.8);
+}
+
+.msg.fail {
+  color: rgba(214, 59, 59, 0.8);
 }

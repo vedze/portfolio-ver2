@@ -15,21 +15,32 @@ interface EmailOption {
 
 export function ContactEmailForm({ from, title, text }: EmailForm) {
   // google transporter
+  // const transporter = nodemailer.createTransport({
+  //   host: "smtp.gmail.com",
+  //   port: 465,
+  //   secure: true,
+  //   auth: {
+  //     user: process.env.GOOGLE_EMAIL,
+  //     pass: process.env.GOOGLE_PWD,
+  //   },
+  //   // logger: true,
+  // });
+
+  // naver transporter
   const transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
+    host: "smtp.naver.com",
     port: 465,
     secure: true,
     auth: {
-      user: process.env.GOOGLE_EMAIL,
-      pass: process.env.GOOGLE_PWD,
+      user: process.env.NAVER_EMAIL,
+      pass: process.env.NAVER_PWD,
     },
-    // logger: true,
   });
 
   // mailing option
   const contactEmail: EmailOption = {
-    from: process.env.GOOGLE_EMAIL || "",
-    to: process.env.GOOGLE_EMAIL || "",
+    from: process.env.NAVER_EMAIL || "",
+    to: `${process.env.GOOGLE_EMAIL}, ${process.env.NAVER_EMAIL}` || "",
     title: `[CONTACT] ${title}`,
     html: `
         <h1>${title}</h1>
