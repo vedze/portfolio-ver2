@@ -22,7 +22,7 @@ export default function ContactContent() {
   };
 
   return (
-    <div id="contact" className={styles.contactContainer}>
+    <div id="contact">
       <div className={`${styles.msg} ${isCopy ? styles.clicked : ""}`}>
         {isCopy ? "Success!" : "click to copy!"}
       </div>
