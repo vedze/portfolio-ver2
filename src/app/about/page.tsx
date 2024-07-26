@@ -5,7 +5,7 @@ import AboutContent from "@/container/about/AboutContent";
 export default function AboutPage() {
   return (
     <div id="about" className={styles.commonPage}>
-      <Section num="01" name="About" />
+      <Section num="01" name="ABOUT" />
       <AboutContent />
     </div>
   );

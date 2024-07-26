@@ -5,7 +5,7 @@ import ContactContent from "@/container/contact/ContactContent";
 export default function ContactPage() {
   return (
     <div id="contact" className={styles.commonPage}>
-      <Section num="03" name="Contact" />
+      <Section num="03" name="CONTACT" />
       <ContactContent />
     </div>
   );
