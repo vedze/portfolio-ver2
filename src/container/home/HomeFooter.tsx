@@ -10,7 +10,7 @@ export default function HomeFooter() {
         {personalCons.EMAIL_ADD}
       </span>
       <span>▼</span>
-      <span>last updated: {personalCons.LAST_UPDATED}</span>
+      <span>Last updated: {personalCons.LAST_UPDATED}</span>
     </div>
   );
 }
