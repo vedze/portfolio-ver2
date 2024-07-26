@@ -2,6 +2,7 @@
   font-size: 66px;
   font-weight: bold;
   margin-bottom: 3rem;
+  word-break: break-all;
 
   &:hover {
     text-decoration: underline;
@@ -22,4 +23,36 @@
 
 .msg.fail {
   color: rgba(214, 59, 59, 0.8);
+}
+
+/* media query */
+
+@media (max-width: 1280px) {
+  .email {
+    font-size: 60px;
+  }
+}
+@media (max-width: 1024px) {
+  .email {
+    font-size: 52px;
+  }
+  .msg {
+    font-size: 27px;
+  }
+}
+@media (max-width: 768px) {
+  .email {
+    font-size: 45px;
+  }
+  .msg {
+    font-size: 25px;
+  }
+}
+@media (max-width: 640px) {
+  .email {
+    font-size: 30px;
+  }
+  .msg {
+    font-size: 22px;
+  }
 }

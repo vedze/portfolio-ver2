@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   width: auto;
-  margin: 0 9rem;
+  margin: 1rem 13rem;
 }
 
 .headerLink {
@@ -21,9 +21,9 @@
   font-weight: 300;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   .homeHeader {
-    margin: 0 5rem;
+    margin: 1rem 9rem;
   }
   .headerLink {
     font-size: 20px;
@@ -32,22 +32,30 @@
     font-size: 13px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .homeHeader {
-    margin: 0 3.5rem;
+    margin: 1rem 7rem;
   }
   .headerLink {
     font-size: 18px;
   }
   .headerLinkResume {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .homeHeader {
-    margin: 0 1.2rem;
+    margin: 1rem 3rem;
+  }
+  .headerLinkResume {
+    font-size: 10px;
+  }
+}
+@media (max-width: 640px) {
+  .homeHeader {
+    margin: 0.1rem;
   }
   .headerLink {
-    font-size: 15px;
+    font-size: 16px;
   }
 }

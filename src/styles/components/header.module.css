@@ -24,3 +24,51 @@
 
   font-size: 19px;
 }
+
+/* media query breakpoints */
+
+@media (max-width: 1280px) {
+  .header {
+    padding: 2rem 8rem;
+  }
+  .headerMenu {
+    font-size: 17px;
+    gap: 3rem;
+  }
+}
+@media (max-width: 1024px) {
+  .header {
+    padding: 2rem 6.7rem;
+  }
+  .headerLogo {
+    font-size: 21px;
+  }
+  .headerMenu {
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    padding: 2rem 4.2rem;
+    margin-bottom: 0;
+  }
+  .headerLogo {
+    font-size: 20px;
+  }
+  .headerMenu {
+    font-size: 15px;
+    gap: 2rem;
+  }
+}
+@media (max-width: 640px) {
+  .header {
+    padding: 2rem 2.5rem;
+  }
+  .headerLogo {
+    font-size: 18px;
+  }
+  .headerMenu {
+    font-size: 13px;
+    gap: 1rem;
+  }
+}
