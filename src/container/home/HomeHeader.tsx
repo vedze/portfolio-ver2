@@ -20,7 +20,11 @@ export default function HomeHeader() {
         Blog
       </Link>
       <span className={styles.headerLink}>
-        <Link href={personalCons.RESUME_LINK} target="blank">
+        <Link
+          href={personalCons.RESUME_LINK}
+          target="blank"
+          className={styles.headerLink}
+        >
           Resume
         </Link>
         <div className={styles.headerLinkResume}>

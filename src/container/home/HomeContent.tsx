@@ -1,4 +1,5 @@
 import styles from "@/styles/home/homecontent.module.css";
+import { CATCH_PHRASE } from "@/data/constants";
 
 export default function HomeContent() {
   return (
@@ -6,15 +7,15 @@ export default function HomeContent() {
       <div className={styles.homeGreetings}>
         안녕하세요!
         <br />
-        이상을 꿈꾸는 개발자 <strong>이지은</strong>입니다.
+        {CATCH_PHRASE} <strong>이지은</strong>입니다.
       </div>
       <div className={styles.homeIntroduce}>
         <div>
-          여기는 제 소개가 들어갈 부분입니다.
+          양심은 효율이 아니라 가치라는 말이 있습니다.
           <br />
-          줄글이 들어갑니다.
+          스스로에게 떳떳한 실력을 갖추기 위해
           <br />
-          짧은 소개말 뭐라고 할 지 고민 백만번
+          느리지만 착실히 저만의 시간을 쌓아가고 있습니다.
         </div>
       </div>
     </div>

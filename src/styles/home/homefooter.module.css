@@ -12,6 +12,20 @@
   word-break: break-all;
 }
 
+.icon {
+  font-size: 1.8em;
+  animation: motion 0.7s infinite ease-in-out alternate;
+}
+
+@keyframes motion {
+  from {
+    transform: translatey(5px);
+  }
+  to {
+    transform: translatey(15px);
+  }
+}
+
 @media (max-width: 1280px) {
   .homeFooter {
     margin: 1.5rem 5.5rem;
