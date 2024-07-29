@@ -8,34 +8,33 @@ interface ProjectProps {
 
 export default function Project({ project }: ProjectProps) {
   return (
-    <div className={styles.projectContainer}>
-      <div className={styles.project}>
-        <div className={styles.titleSection}>
-          <h1>{project.title}</h1>
-        </div>
-        <div className={styles.summarySection}>
-          <h2>Details</h2>
+    <div className={styles.project}>
+      <div className={styles.titleSection}>
+        <h1>{project.title}</h1>
+        <p>{project.date}</p>
+      </div>
+
+      <div className={styles.summarySection}>
+        <div className={styles.details}>
           {project.details.map((detail, i) => (
             <p key={i}>
-              <FiCheck style={{ marginRight: "10px" }} />
+              <FiCheck style={{ marginRight: "5px" }} />
               {detail}
             </p>
           ))}
         </div>
-        <div className={styles.skillSection}>
-          <h2>Skills</h2>
-          {project.skills.map((skill, idx) => (
-            <p key={idx}>{skill}</p>
+        <div className={styles.skills}>
+          <h2>사용 스킬</h2>
+          {project.skills.map((skill, i) => (
+            <p key={i}>{skill.name}</p>
           ))}
         </div>
-        {project.links && project.links.length > 0 && (
-          <div className={styles.linkSection}>
-            <h2>Link</h2>
-            {project.links.map((link, idx) => (
-              <p key={idx}>{link}</p>
-            ))}
-          </div>
-        )}
+        <div className={styles.links}>
+          <h2>관련 링크</h2>
+          {project.links?.map((link, i) => (
+            <p key={i}>{link}</p>
+          ))}
+        </div>
       </div>
     </div>
   );
