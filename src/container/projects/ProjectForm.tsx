@@ -18,7 +18,7 @@ export default function Project({ project }: ProjectProps) {
         <div className={styles.details}>
           {project.details.map((detail, i) => (
             <p key={i}>
-              <FiCheck style={{ marginRight: "5px" }} />
+              <FiCheck />
               {detail}
             </p>
           ))}

@@ -1,4 +1,5 @@
 export interface ProjectType {
+  id: number;
   type: string;
   title: string;
   date?: string;
@@ -14,7 +15,8 @@ interface Skill {
 
 export const projects: ProjectType[] = [
   {
-    type: "개인 프로젝트",
+    id: 1,
+    type: "personal",
     title: "개인 포트폴리오 (현재 사이트)",
     date: "2024.06 - 진행중",
     details: [
@@ -32,7 +34,8 @@ export const projects: ProjectType[] = [
     links: ["Github Link"],
   },
   {
-    type: "개인 프로젝트",
+    id: 2,
+    type: "personal",
     title: "감정 일기장",
     date: "2024.05",
     details: ["감정과 함께 기록할 수 있는 일기장 프로젝트"],
@@ -43,10 +46,12 @@ export const projects: ProjectType[] = [
     links: ["Github Link"],
   },
   {
-    type: "팀 프로젝트",
+    id: 3,
+    type: "team",
     title: "TEAM PORTFOLIO (배포 중단)",
     date: "2024.03 - 2024.04",
     details: [
+      "팀 프로젝트 (FE 3명, BE 1명)",
       "누구나 열람하고 게시할 수 있는 포트폴리오 사이트",
       "중도 참여하여 유저별 프로젝트 페이지 제작",
     ],

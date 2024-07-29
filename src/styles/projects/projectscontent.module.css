@@ -10,6 +10,7 @@
 .titleSection h1 {
   font-size: 40px;
   margin: 0;
+  word-break: keep-all;
 }
 .titleSection p {
   font-size: 20px;
@@ -25,15 +26,16 @@
   margin-bottom: 1rem;
 }
 .summarySection h2 {
-  font-size: 22px;
+  font-size: 26px;
   margin-bottom: 0.5rem;
 }
 .summarySection p {
-  font-size: 22px;
+  font-size: 24px;
 }
 
 .details p {
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 10px;
 }

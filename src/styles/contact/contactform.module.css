@@ -102,6 +102,13 @@
   color: darkgrey;
   font-size: 20px;
   font-family: var(--font-pretendard);
+
+  transition: color 0.2s ease, font-weight 0.2s ease;
+
+  &:hover {
+    color: rgb(147, 184, 130);
+    font-weight: 550;
+  }
 }
 
 /* 유효성검사 실패시 메시지 */

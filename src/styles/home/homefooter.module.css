@@ -49,6 +49,9 @@
   .homeFooter span {
     font-size: 15px;
   }
+  .icon {
+    font-size: 1.5em;
+  }
 }
 @media (max-width: 640px) {
   .homeFooter {
@@ -57,5 +60,8 @@
   .homeFooter span {
     font-size: 13px;
     padding: 0 0.3rem;
+  }
+  .icon {
+    font-size: 1.2em;
   }
 }
