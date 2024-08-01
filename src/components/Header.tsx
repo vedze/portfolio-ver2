@@ -8,9 +8,9 @@ export default function Header() {
         LEE JI EUN
       </Link>
       <div className={styles.headerMenu}>
-        <Link href="#about">About</Link>
-        <Link href="#projects">Projects</Link>
-        <Link href="#contact">Contact</Link>
+        <Link href="#project">PROJECT</Link>
+        <Link href="#study">STUDY</Link>
+        <Link href="#contact">CONTACT</Link>
       </div>
     </div>
   );

@@ -1,55 +1,53 @@
+"use client";
+
 import styles from "@/styles/projects/projectscontent.module.css";
-import { ProjectType } from "@/data/project";
+import { ProjectType } from "@/data/projects";
 import { FiCheck } from "react-icons/fi";
-import Image from "next/image";
+import { useState } from "react";
 
 interface ProjectProps {
   project: ProjectType;
 }
 
 export default function Project({ project }: ProjectProps) {
+  const [selectedSkillIdx, setSelectedSkillIdx] = useState<number | null>(null);
+
+  const handleSelect = (idx: number) => {
+    setSelectedSkillIdx(idx === selectedSkillIdx ? null : idx);
+  };
+
   return (
-    <div className={styles.projectContainer}>
-      <div className={styles.project}>
-        <div className={styles.titleSection}>
-          <p>{project.type}</p>
-          <h1>{project.title}</h1>
-          <time>{project.date}</time>
-        </div>
-        <div className={styles.summarySection}>
-          {project.summaries.map((summary, i) => (
+    <div className={styles.project}>
+      <div className={styles.titleSection}>
+        <h1>{project.title}</h1>
+        <p>{project.date}</p>
+      </div>
+
+      <div className={styles.summarySection}>
+        <div className={styles.details}>
+          {project.details.map((detail, i) => (
             <p key={i}>
-              <FiCheck style={{ marginRight: "10px" }} />
-              {summary}
+              <FiCheck />
+              {detail}
             </p>
           ))}
         </div>
-        <div className={styles.skillSection}>
-          <h2>사용 기술</h2>
-          {project.skills.map((skill, idx) => (
-            <p key={idx}>{skill}</p>
+        <div className={styles.skills}>
+          <h2>사용 스킬</h2>
+          {project.skills.map((skill, i) => (
+            <div key={i}>
+              <p onClick={() => handleSelect(i)}>{skill.name}</p>
+              {selectedSkillIdx === i && <p>{skill.desc}</p>}
+            </div>
           ))}
         </div>
-        {project.links && project.links.length > 0 && (
-          <div className={styles.linkSection}>
-            <h2>링크</h2>
-            {project.links.map((link, idx) => (
-              <p key={idx}>{link}</p>
-            ))}
-          </div>
-        )}
-      </div>
-      {project.imgs && project.imgs.length > 0 && (
-        <div className={styles.projectImg}>
-          <Image
-            src={project.imgs[0]}
-            alt={project.title}
-            width={500}
-            height={300}
-            layout="responsive"
-          />
+        <div className={styles.links}>
+          <h2>관련 링크</h2>
+          {project.links?.map((link, i) => (
+            <p key={i}>{link}</p>
+          ))}
         </div>
-      )}
+      </div>
     </div>
   );
 }

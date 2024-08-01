@@ -1,5 +1,6 @@
-import { personalCons } from "@/data/constants";
 import styles from "@/styles/home/homefooter.module.css";
+import { personalCons } from "@/data/constants";
+import { IoIosArrowDown } from "react-icons/io";
 
 export default function HomeFooter() {
   return (
@@ -9,8 +10,10 @@ export default function HomeFooter() {
         <br />
         {personalCons.EMAIL_ADD}
       </span>
-      <span>▼</span>
-      <span>last updated: {personalCons.LAST_UPDATED}</span>
+      <p className={styles.icon}>
+        <IoIosArrowDown />
+      </p>
+      <span>Last updated: {personalCons.LAST_UPDATED}</span>
     </div>
   );
 }

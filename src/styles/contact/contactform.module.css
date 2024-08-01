@@ -3,12 +3,12 @@
   flex-direction: column;
   justify-content: center;
 
-  margin-bottom: 5rem;
+  margin-bottom: 7rem;
 }
 
 .inputGroup {
   position: relative;
-  margin-top: 5rem;
+  margin-top: 4rem;
   border-bottom: 2px solid darkgrey;
   transition: all 0.2s;
 }
@@ -86,7 +86,7 @@
   position: absolute;
   color: darkgrey;
   left: 10px;
-  font-size: 25px;
+  font-size: 22px;
   bottom: 10px;
   transition: all 0.2s;
 }
@@ -102,6 +102,20 @@
   color: darkgrey;
   font-size: 20px;
   font-family: var(--font-pretendard);
+
+  transition: color 0.2s ease, font-weight 0.2s ease;
+
+  &:hover {
+    color: rgb(147, 184, 130);
+    font-weight: 550;
+  }
+}
+
+/* 유효성검사 실패시 메시지 */
+.errorText {
+  color: red;
+  font-size: 18px;
+  margin: 0.5rem;
 }
 
 /* 유효성검사 실패시 메시지 */

@@ -4,8 +4,8 @@ import ProjectsContent from "@/container/projects/ProjectsContent";
 
 export default function ProjectsPage() {
   return (
-    <div id="projects" className={styles.commonPage}>
-      <Section num="02" name="Projects" />
+    <div id="project" className={styles.commonPage}>
+      <Section num="01" name="PROJECT" />
       <ProjectsContent />
     </div>
   );

@@ -1,4 +1,4 @@
-import { projects } from "@/data/project";
+import { projects } from "@/data/projects";
 import Project from "./ProjectForm";
 
 export default function ProjectsContent() {

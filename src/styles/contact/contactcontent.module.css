@@ -1,7 +1,8 @@
 .email {
-  font-size: 66px;
+  font-size: 60px;
   font-weight: bold;
   margin-bottom: 3rem;
+  word-break: break-all;
 
   &:hover {
     text-decoration: underline;
@@ -17,9 +18,41 @@
 
 .msg.copied,
 .msg.success {
-  color: rgba(62, 136, 62, 0.8);
+  color: rgb(147, 184, 130);
 }
 
 .msg.fail {
   color: rgba(214, 59, 59, 0.8);
+}
+
+/* media query */
+
+@media (max-width: 1280px) {
+  .email {
+    font-size: 56px;
+  }
+}
+@media (max-width: 1024px) {
+  .email {
+    font-size: 50px;
+  }
+  .msg {
+    font-size: 27px;
+  }
+}
+@media (max-width: 768px) {
+  .email {
+    font-size: 43px;
+  }
+  .msg {
+    font-size: 25px;
+  }
+}
+@media (max-width: 640px) {
+  .email {
+    font-size: 32px;
+  }
+  .msg {
+    font-size: 22px;
+  }
 }

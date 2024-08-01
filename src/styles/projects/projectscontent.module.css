@@ -1,17 +1,7 @@
-.projectContainer {
-  display: flex;
-  margin-bottom: 5rem;
-}
-
 .project {
-  flex: 2;
-  margin-top: 3rem;
-}
-
-.projectImg {
-  flex: 1;
-  align-self: flex-end;
-  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
 }
 
 .titleSection,
@@ -19,34 +9,35 @@
 .skillSection {
   margin-bottom: 2rem;
 }
-
-/* Title Section */
-.titleSection p {
-  font-size: 25px;
-}
 .titleSection h1 {
-  font-size: 45px;
-  padding: 0.5rem 0 0 0;
-  &:hover {
-    text-decoration: underline;
-    cursor: pointer;
-  }
+  font-size: 40px;
+  margin: 0;
+  word-break: keep-all;
 }
-.titleSection time {
+.titleSection p {
   font-size: 20px;
+  color: #4e4e4e;
 }
 
-.summarySection p,
-.skillSection p,
-.linkSection p {
+.summarySection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.summarySection div {
+  margin-bottom: 1rem;
+}
+.summarySection h2 {
+  font-size: 26px;
+  margin-bottom: 0.5rem;
+}
+.summarySection p {
+  font-size: 24px;
+}
+
+.details p {
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-size: 23px;
-}
-
-.project h2 {
-  font-size: 30px;
-  font-weight: 650;
-  margin-bottom: 0.5rem;
+  gap: 10px;
 }
