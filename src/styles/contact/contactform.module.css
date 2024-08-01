@@ -117,3 +117,10 @@
   font-size: 18px;
   margin: 0.5rem;
 }
+
+/* 유효성검사 실패시 메시지 */
+.errorText {
+  color: red;
+  font-size: 18px;
+  margin: 0.5rem;
+}
