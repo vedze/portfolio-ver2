@@ -1,13 +1,11 @@
 .project {
   display: flex;
   flex-direction: column;
-  margin-bottom: 5rem;
+  margin-bottom: 7rem;
 }
 
-.titleSection,
-.summarySection,
-.skillSection {
-  margin-bottom: 2rem;
+.titleSection {
+  margin-bottom: 3rem;
 }
 .titleSection h1 {
   font-size: 40px;
@@ -20,24 +18,46 @@
 }
 
 .summarySection {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-.summarySection div {
-  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 2rem 0;
 }
 .summarySection h2 {
   font-size: 26px;
+  font-weight: 600;
   margin-bottom: 0.5rem;
 }
 .summarySection p {
   font-size: 24px;
 }
 
+.details {
+  margin-right: 3rem;
+}
 .details p {
   display: flex;
-  flex-direction: row;
   align-items: center;
+  margin-bottom: 10px;
   gap: 10px;
+}
+.details svg {
+  flex-shrink: 0;
+}
+
+/* .skills p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+
+  justify-content: space-between;
+  padding: 0 10px;
+
+  border-bottom: 2px solid rgba(78, 78, 78, 0.2);
+} */
+
+@media (max-width: 1180px) {
+  .summarySection {
+    grid-template-columns: 1fr;
+  }
 }
