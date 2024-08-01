@@ -8,8 +8,8 @@ export default function Header() {
         LEE JI EUN
       </Link>
       <div className={styles.headerMenu}>
-        <Link href="#about">ABOUT</Link>
         <Link href="#project">PROJECT</Link>
+        <Link href="#study">STUDY</Link>
         <Link href="#contact">CONTACT</Link>
       </div>
     </div>

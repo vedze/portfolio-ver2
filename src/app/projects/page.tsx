@@ -5,7 +5,7 @@ import ProjectsContent from "@/container/projects/ProjectsContent";
 export default function ProjectsPage() {
   return (
     <div id="project" className={styles.commonPage}>
-      <Section num="02" name="PROJECT" />
+      <Section num="01" name="PROJECT" />
       <ProjectsContent />
     </div>
   );
