@@ -3,19 +3,15 @@
 import styles from "@/styles/projects/projectscontent.module.css";
 import { ProjectType } from "@/data/projects";
 import { FiCheck } from "react-icons/fi";
-import { useState } from "react";
+// import { IoIosArrowDown, IoIosArrowBack } from "react-icons/io";
+// import { useState } from "react";
+import { ProjectSkills } from "./ProjectSkills";
 
 interface ProjectProps {
   project: ProjectType;
 }
 
 export default function Project({ project }: ProjectProps) {
-  const [selectedSkillIdx, setSelectedSkillIdx] = useState<number | null>(null);
-
-  const handleSelect = (idx: number) => {
-    setSelectedSkillIdx(idx === selectedSkillIdx ? null : idx);
-  };
-
   return (
     <div className={styles.project}>
       <div className={styles.titleSection}>
@@ -25,6 +21,7 @@ export default function Project({ project }: ProjectProps) {
 
       <div className={styles.summarySection}>
         <div className={styles.details}>
+          <h2>프로젝트 소개</h2>
           {project.details.map((detail, i) => (
             <p key={i}>
               <FiCheck />
@@ -33,13 +30,17 @@ export default function Project({ project }: ProjectProps) {
           ))}
         </div>
         <div className={styles.skills}>
-          <h2>사용 스킬</h2>
-          {project.skills.map((skill, i) => (
+          <h2>기술 스택</h2>
+          {/* {project.skills.map((skill, i) => (
             <div key={i}>
-              <p onClick={() => handleSelect(i)}>{skill.name}</p>
+              <p onClick={() => handleSelect(i)}>
+                {skill.name}
+                <IoIosArrowDown />
+              </p>
               {selectedSkillIdx === i && <p>{skill.desc}</p>}
             </div>
-          ))}
+          ))} */}
+          <ProjectSkills />
         </div>
         <div className={styles.links}>
           <h2>관련 링크</h2>
