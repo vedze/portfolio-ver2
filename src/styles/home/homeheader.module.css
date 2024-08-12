@@ -13,7 +13,7 @@
   transition: color 0.2s ease;
 
   &:hover {
-    color: rgb(147, 184, 130);
+    color: rgb(132, 184, 107);
     text-decoration-line: underline;
   }
 }
