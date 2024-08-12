@@ -43,29 +43,16 @@
   align-items: center;
   margin-bottom: 12px;
 }
+.details svg,
+.skills svg {
+  flex-shrink: 0;
+  margin-right: 10px;
+}
 
 /* skills */
 .skills {
   font-size: 24px;
   align-items: center;
-}
-.skill {
-  border-bottom: 2px solid rgba(78, 78, 78, 0.2);
-}
-.skillName {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
-.skillDesc {
-  margin-left: 10px;
-}
-
-.details svg,
-.skills svg {
-  flex-shrink: 0;
-  margin-right: 10px;
 }
 
 @media (max-width: 1180px) {

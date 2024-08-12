@@ -1,6 +1,6 @@
 "use clinet";
 
-import styles from "@/styles/projects/projectscontent.module.css";
+import styles from "@/styles/components/accodion.module.css";
 import { useState } from "react";
 import { SlGraph } from "react-icons/sl";
 import { IoIosArrowDown, IoIosArrowBack } from "react-icons/io";
@@ -18,15 +18,15 @@ export const Accodion = ({ name, desc }: AccodionProps) => {
   };
 
   return (
-    <div onClick={handleOpen} className={styles.skill}>
-      <div className={styles.skillName}>
+    <div onClick={handleOpen} className={styles.accodion}>
+      <div className={styles.accTitle}>
         <span>
           <SlGraph />
           {name}
         </span>
         {isOpen ? <IoIosArrowBack /> : <IoIosArrowDown />}
       </div>
-      {isOpen && <div className={styles.skillDesc}>{desc}</div>}
+      {isOpen && <div className={styles.accDesc}>{desc}</div>}
     </div>
   );
 };

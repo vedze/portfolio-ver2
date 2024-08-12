@@ -1,0 +1,16 @@
+.accodion {
+  border-bottom: 2px solid rgba(78, 78, 78, 0.2);
+  cursor: pointer;
+}
+.accTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+.accDesc {
+  margin-left: 2.2rem;
+  padding-bottom: 1rem;
+
+  font-size: 20px;
+}
