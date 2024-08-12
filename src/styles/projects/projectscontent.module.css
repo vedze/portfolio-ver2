@@ -30,7 +30,7 @@
 /* summary section */
 .summarySection {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 1.3fr 1fr;
   gap: 2rem 0;
 }
 .summarySection p {
@@ -44,7 +44,7 @@
 .details p {
   display: flex;
   align-items: center;
-  margin-bottom: 0.5rem;
+  padding-top: 0.5rem;
 }
 
 /* skills */
@@ -78,8 +78,55 @@
   }
 }
 
+/* summary section 줄바꿈 1180px */
 @media (max-width: 1180px) {
   .summarySection {
     grid-template-columns: 1fr;
+  }
+  .details {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1280px) {
+  .titleSection h1 {
+    font-size: 36px;
+  }
+  .project h2 {
+    font-size: 24px;
+  }
+  .summarySection p,
+  .skills,
+  .links {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .titleSection h1 {
+    font-size: 34px;
+  }
+  .project h2 {
+    font-size: 22px;
+  }
+  .summarySection p,
+  .skills,
+  .links {
+    font-size: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .titleSection h1 {
+    font-size: 28px;
+  }
+  .titleSection p {
+    font-size: 16px;
+  }
+  .project h2 {
+    font-size: 20px;
+  }
+  .summarySection p,
+  .skills,
+  .links {
+    font-size: 18px;
   }
 }
