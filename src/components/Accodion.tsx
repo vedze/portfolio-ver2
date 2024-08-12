@@ -1,16 +1,16 @@
 "use clinet";
 
-import styles from "@/styles/components/accodion.module.css";
+import styles from "@/styles/components/accordion.module.css";
 import { useState } from "react";
 import { SlGraph } from "react-icons/sl";
 import { IoIosArrowDown, IoIosArrowBack } from "react-icons/io";
 
-interface AccodionProps {
+interface AccordionProps {
   name: string;
   desc: string;
 }
 
-export const Accodion = ({ name, desc }: AccodionProps) => {
+export const Accordion = ({ name, desc }: AccordionProps) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const handleOpen = () => {
@@ -18,7 +18,7 @@ export const Accodion = ({ name, desc }: AccodionProps) => {
   };
 
   return (
-    <div onClick={handleOpen} className={styles.accodion}>
+    <div onClick={handleOpen} className={styles.accordion}>
       <div className={styles.accTitle}>
         <span>
           <SlGraph />

@@ -2,7 +2,7 @@
 
 import styles from "@/styles/projects/projectscontent.module.css";
 import { skills } from "@/data/skills";
-import { Accodion } from "@/components/Accodion";
+import { Accordion } from "@/components/Accodion";
 
 type ProjectSkillsProps = {
   skillIds: number[];
@@ -14,7 +14,7 @@ export default function ProjectSkills({ skillIds }: ProjectSkillsProps) {
   return (
     <div className={styles.skills}>
       {filteredSkills.map((skill) => (
-        <Accodion name={skill.name} desc={skill.defaultDesc} key={skill.id} />
+        <Accordion name={skill.name} desc={skill.defaultDesc} key={skill.id} />
       ))}
     </div>
   );
