@@ -87,7 +87,7 @@ a {
     font-size: 14px;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 576px) {
   section {
     padding: 0;
   }
