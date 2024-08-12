@@ -1,4 +1,4 @@
-"use clinet";
+"use client";
 
 import styles from "@/styles/components/accordion.module.css";
 import { useState } from "react";

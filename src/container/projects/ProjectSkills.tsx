@@ -1,5 +1,3 @@
-"use client";
-
 import styles from "@/styles/projects/projectscontent.module.css";
 import { skills } from "@/data/skills";
 import { Accordion } from "@/components/Accodion";
