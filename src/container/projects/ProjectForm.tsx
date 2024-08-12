@@ -1,9 +1,8 @@
-"use client";
-
 import styles from "@/styles/projects/projectscontent.module.css";
 import { ProjectType } from "@/data/projects";
 import { FiCheck } from "react-icons/fi";
 import ProjectSkills from "./ProjectSkills";
+import Link from "next/link";
 
 interface ProjectProps {
   project: ProjectType;
@@ -27,16 +26,18 @@ export default function Project({ project }: ProjectProps) {
             </p>
           ))}
         </div>
-        <div className={styles.skills}>
+        <div>
           <h2>기술 스택</h2>
           <ProjectSkills skillIds={project.skills} />
         </div>
-        {/* <div className={styles.links}>
+        <div className={styles.links}>
           <h2>관련 링크</h2>
           {project.links?.map((link, i) => (
-            <p key={i}>{link}</p>
+            <Link key={i} href={link.url}>
+              {link.name}
+            </Link>
           ))}
-        </div> */}
+        </div>
       </div>
     </div>
   );
