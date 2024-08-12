@@ -1,6 +1,7 @@
 import styles from "@/styles/projects/projectscontent.module.css";
 import { ProjectType } from "@/data/projects";
 import { FiCheck } from "react-icons/fi";
+import { IoLinkOutline } from "react-icons/io5";
 import ProjectSkills from "./ProjectSkills";
 import Link from "next/link";
 
@@ -33,9 +34,10 @@ export default function Project({ project }: ProjectProps) {
         <div className={styles.links}>
           <h2>관련 링크</h2>
           {project.links?.map((link, i) => (
-            <Link key={i} href={link.url}>
-              {link.name}
-            </Link>
+            <p key={i}>
+              <IoLinkOutline />
+              <Link href={link.url}>{link.name}</Link>
+            </p>
           ))}
         </div>
       </div>

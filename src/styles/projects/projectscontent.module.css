@@ -3,6 +3,15 @@
   flex-direction: column;
   margin-bottom: 7rem;
 }
+.project h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.project svg {
+  flex-shrink: 0;
+  margin-right: 10px;
+}
 
 /* title section */
 .titleSection {
@@ -18,12 +27,6 @@
   color: #4e4e4e;
 }
 
-.project h2 {
-  font-size: 26px;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
 /* summary section */
 .summarySection {
   display: grid;
@@ -31,7 +34,7 @@
   gap: 2rem 0;
 }
 .summarySection p {
-  font-size: 24px;
+  font-size: 23px;
 }
 
 /* details */
@@ -41,18 +44,38 @@
 .details p {
   display: flex;
   align-items: center;
-  margin-bottom: 12px;
-}
-.details svg,
-.skills svg {
-  flex-shrink: 0;
-  margin-right: 10px;
+  margin-bottom: 0.5rem;
 }
 
 /* skills */
 .skills {
-  font-size: 24px;
+  font-size: 23px;
+  font-weight: 350;
   align-items: center;
+
+  margin-bottom: 1rem;
+}
+
+/* links */
+.links {
+  font-size: 23px;
+  font-weight: 350;
+}
+.links p {
+  display: flex;
+  align-items: center;
+}
+.links a {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 1.2px;
+  transition: all 0.1s;
+
+  &:hover {
+    /* color: rgb(85, 160, 97); */
+    font-weight: 500;
+    text-decoration-thickness: 2px;
+  }
 }
 
 @media (max-width: 1180px) {
