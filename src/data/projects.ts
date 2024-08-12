@@ -23,7 +23,12 @@ export const projects: ProjectType[] = [
       "nodemailer를 이용한 메일링 기능",
     ],
     skills: [1, 2, 4],
-    links: [{ name: "github", url: "https://github.com/vedze/portfolio-ver2" }],
+    links: [
+      {
+        name: "Github 바로가기",
+        url: "https://github.com/vedze/portfolio-ver2",
+      },
+    ],
   },
   {
     type: "개인 프로젝트",
@@ -32,7 +37,10 @@ export const projects: ProjectType[] = [
     details: ["감정과 함께 기록할 수 있는 일기장 프로젝트"],
     skills: [1, 3],
     links: [
-      { name: "github", url: "https://github.com/vedze/emotional-diary" },
+      {
+        name: "Github 바로가기",
+        url: "https://github.com/vedze/emotional-diary",
+      },
     ],
   },
   {
@@ -47,7 +55,7 @@ export const projects: ProjectType[] = [
     skills: [1, 2, 5, 6, 7],
     links: [
       {
-        name: "Github",
+        name: "Github 바로가기",
         url: "https://github.com/Plain-Portfolio/portfolio_front",
       },
     ],

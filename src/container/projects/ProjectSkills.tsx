@@ -1,8 +1,6 @@
-"use client";
-
 import styles from "@/styles/projects/projectscontent.module.css";
 import { skills } from "@/data/skills";
-import { Accordion } from "@/components/Accodion";
+import { Accordion } from "@/components/Accordion";
 
 type ProjectSkillsProps = {
   skillIds: number[];

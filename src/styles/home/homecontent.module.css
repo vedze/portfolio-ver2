@@ -59,7 +59,7 @@
     font-size: 22px;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 576px) {
   .homeContent {
     margin: 0;
   }

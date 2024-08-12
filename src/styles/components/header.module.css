@@ -37,7 +37,7 @@
 }
 @media (max-width: 1024px) {
   .header {
-    padding: 2rem 6.7rem;
+    padding: 1.8rem 6.7rem;
   }
   .headerLogo {
     font-size: 21px;
@@ -48,7 +48,7 @@
 }
 @media (max-width: 768px) {
   .header {
-    padding: 2rem 4.2rem;
+    padding: 1.6rem 4.2rem;
     margin-bottom: 0;
   }
   .headerLogo {
@@ -59,9 +59,9 @@
     gap: 2rem;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 576px) {
   .header {
-    padding: 2rem 2.5rem;
+    padding: 1.2rem 2.5rem;
   }
   .headerLogo {
     font-size: 18px;
