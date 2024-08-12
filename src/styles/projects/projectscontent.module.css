@@ -4,6 +4,7 @@
   margin-bottom: 7rem;
 }
 
+/* title section */
 .titleSection {
   margin-bottom: 3rem;
 }
@@ -17,44 +18,42 @@
   color: #4e4e4e;
 }
 
+.project h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* summary section */
 .summarySection {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   gap: 2rem 0;
 }
-.summarySection h2 {
-  font-size: 26px;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
 .summarySection p {
   font-size: 24px;
 }
 
+/* details */
 .details {
-  margin-right: 3rem;
+  margin-right: 5rem;
 }
 .details p {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
-  gap: 10px;
+  margin-bottom: 12px;
 }
-.details svg {
+.details svg,
+.skills svg {
   flex-shrink: 0;
+  margin-right: 10px;
 }
 
-/* .skills p {
-  display: flex;
+/* skills */
+.skills {
+  font-size: 24px;
   align-items: center;
-  margin-bottom: 10px;
-  gap: 10px;
-
-  justify-content: space-between;
-  padding: 0 10px;
-
-  border-bottom: 2px solid rgba(78, 78, 78, 0.2);
-} */
+}
 
 @media (max-width: 1180px) {
   .summarySection {

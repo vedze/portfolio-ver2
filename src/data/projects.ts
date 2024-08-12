@@ -4,7 +4,12 @@ export interface ProjectType {
   date?: string;
   details: string[];
   skills: number[];
-  links?: string[];
+  links?: Link[];
+}
+
+interface Link {
+  name: string;
+  url: string;
 }
 
 export const projects: ProjectType[] = [
@@ -18,7 +23,7 @@ export const projects: ProjectType[] = [
       "nodemailer를 이용한 메일링 기능",
     ],
     skills: [1, 2, 4],
-    links: ["Github Link"],
+    links: [{ name: "github", url: "https://github.com/vedze/portfolio-ver2" }],
   },
   {
     type: "개인 프로젝트",
@@ -26,7 +31,9 @@ export const projects: ProjectType[] = [
     date: "2024.05",
     details: ["감정과 함께 기록할 수 있는 일기장 프로젝트"],
     skills: [1, 3],
-    links: ["Github Link"],
+    links: [
+      { name: "github", url: "https://github.com/vedze/emotional-diary" },
+    ],
   },
   {
     type: "팀 프로젝트",
@@ -38,6 +45,11 @@ export const projects: ProjectType[] = [
       "중도 참여하여 유저별 프로젝트 페이지 제작",
     ],
     skills: [1, 2, 5, 6, 7],
-    links: ["Github Link"],
+    links: [
+      {
+        name: "Github",
+        url: "https://github.com/Plain-Portfolio/portfolio_front",
+      },
+    ],
   },
 ];
