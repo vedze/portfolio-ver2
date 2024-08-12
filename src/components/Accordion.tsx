@@ -18,8 +18,8 @@ export const Accordion = ({ name, desc }: AccordionProps) => {
   };
 
   return (
-    <div onClick={handleOpen} className={styles.accordion}>
-      <div className={styles.accTitle}>
+    <div className={styles.accordion}>
+      <div onClick={handleOpen} className={styles.accTitle}>
         <span>
           <SlGraph />
           {name}
