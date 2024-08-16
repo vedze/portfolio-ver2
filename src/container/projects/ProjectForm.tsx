@@ -36,7 +36,9 @@ export default function Project({ project }: ProjectProps) {
           {project.links?.map((link, i) => (
             <p key={i}>
               <IoLinkOutline />
-              <Link href={link.url}>{link.name}</Link>
+              <Link href={link.url} className="highlighter">
+                {link.name}
+              </Link>
             </p>
           ))}
         </div>

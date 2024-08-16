@@ -71,6 +71,31 @@ svg {
   margin-right: 10px;
 }
 
+/* 형광펜 효과 */
+.highlighter {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: inherit;
+
+  background: linear-gradient(
+    to right,
+    rgb(147, 170, 65) 0%,
+    rgb(147, 170, 65) 100%
+  ); /* direction, color-stop1, color-stop2 */
+  background-position: 0 calc(100% - 5px); /* 밑줄 위치 */
+  background-size: 0 26px; /* 밑줄 높이 */
+  background-repeat: no-repeat;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-size: 100% 26px;
+    font-weight: 600;
+    text-decoration-thickness: 2px;
+  }
+
+  cursor: pointer;
+}
+
 @media (max-width: 1280px) {
   section {
     padding: 0 5.5rem;

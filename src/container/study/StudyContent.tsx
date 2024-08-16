@@ -1,3 +1,4 @@
+import "@/styles/globals.css";
 import styles from "@/styles/study/studycontent.module.css";
 import { studyData } from "@/data/study";
 import { IoMdArrowDropright } from "react-icons/io";
@@ -12,7 +13,7 @@ export default function StudyContent() {
             <div key={i} className={styles.list}>
               <h4>
                 <IoMdArrowDropright />
-                {list.name}
+                <span className="highlighter">{list.name}</span>
               </h4>
               <p>{list.expl}</p>
             </div>
