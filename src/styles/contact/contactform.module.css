@@ -106,21 +106,14 @@
   transition: color 0.2s ease, font-weight 0.2s ease;
 
   &:hover {
-    color: rgb(147, 184, 130);
+    color: rgb(85, 160, 97);
     font-weight: 550;
   }
 }
 
 /* 유효성검사 실패시 메시지 */
 .errorText {
-  color: red;
-  font-size: 18px;
-  margin: 0.5rem;
-}
-
-/* 유효성검사 실패시 메시지 */
-.errorText {
-  color: red;
+  color: rgb(248, 82, 82);
   font-size: 18px;
   margin: 0.5rem;
 }

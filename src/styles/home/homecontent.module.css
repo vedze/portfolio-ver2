@@ -9,7 +9,7 @@
 }
 
 .homeGreetings {
-  font-size: 45px;
+  font-size: 40px;
   line-height: 4rem;
   word-break: keep-all;
 }
@@ -19,7 +19,7 @@
 }
 
 .homeIntroduce {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 300;
   word-break: keep-all;
   line-height: 3rem;
@@ -30,7 +30,7 @@
     margin: 0 6rem;
   }
   .homeGreetings {
-    font-size: 40px;
+    font-size: 36px;
   }
   .homeIntroduce {
     font-size: 26px;
@@ -41,7 +41,7 @@
     margin: 0 4.5rem;
   }
   .homeGreetings {
-    font-size: 36px;
+    font-size: 34px;
   }
   .homeIntroduce {
     font-size: 24px;
@@ -52,11 +52,12 @@
     margin: 0 2rem;
   }
   .homeGreetings {
-    font-size: 33px;
+    font-size: 30px;
     line-height: 3.5rem;
   }
   .homeIntroduce {
     font-size: 22px;
+    line-height: 2.8rem;
   }
 }
 @media (max-width: 576px) {
@@ -64,10 +65,11 @@
     margin: 0;
   }
   .homeGreetings {
-    font-size: 30px;
+    font-size: 28px;
     line-height: 3rem;
   }
   .homeIntroduce {
     font-size: 20px;
+    line-height: 2.5rem;
   }
 }

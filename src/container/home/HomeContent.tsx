@@ -15,7 +15,7 @@ export default function HomeContent() {
           <br />
           스스로에게 떳떳한 실력을 갖추기 위해
           <br />
-          느리지만 착실히 저만의 시간을 쌓아가고 있습니다.
+          저만의 시간을 착실히 쌓아가고 있습니다.
         </div>
       </div>
     </div>

@@ -8,10 +8,6 @@
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
-.project svg {
-  flex-shrink: 0;
-  margin-right: 10px;
-}
 
 /* title section */
 .titleSection {
