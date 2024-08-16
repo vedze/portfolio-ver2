@@ -16,7 +16,7 @@ export const projects: ProjectType[] = [
   {
     type: "개인 프로젝트",
     title: "개인 포트폴리오 (현재 사이트)",
-    date: "2024.06 - 진행중",
+    date: "2024.07 - 진행중",
     details: [
       "개인 프로젝트",
       "나만의 포트폴리오를 갖기 위해 제작",
