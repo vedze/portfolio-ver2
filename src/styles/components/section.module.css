@@ -25,4 +25,5 @@
   font-size: 20px;
   color: #7f7f7f;
   white-space: pre-line; /* 줄바꿈 */
+  word-break: keep-all;
 }
