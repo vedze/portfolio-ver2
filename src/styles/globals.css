@@ -114,8 +114,8 @@ svg {
 }
 @media (max-width: 1024px) {
   :root {
-    --point-color: rgb(205, 175, 24);
-    --point-color-opaque: rgba(205, 175, 24, 0.7);
+    --point-color: rgb(205, 157, 24);
+    --point-color-opaque: rgba(221, 178, 26, 0.7);
   }
   body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
