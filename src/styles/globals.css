@@ -4,6 +4,17 @@
   box-sizing: border-box;
 }
 
+:root {
+  --point-yellow: rgb(205, 175, 24);
+  --point-yellow-opaque: rgba(205, 175, 24, 0.7);
+
+  --global-green: #5f8723;
+  --global-red: rgb(214, 59, 59);
+
+  --dark-grey: #666;
+  --bright-grey: #aaa;
+}
+
 html,
 body {
   height: 100%;
@@ -44,7 +55,7 @@ section {
 }
 
 footer {
-  color: #4e4e4e;
+  color: var(--dark-grey);
   font-size: 18px;
   text-align: center;
 
@@ -79,8 +90,8 @@ svg {
 
   background: linear-gradient(
     to right,
-    rgb(147, 170, 65) 0%,
-    rgb(147, 170, 65) 100%
+    var(--point-yellow-opaque) 0%,
+    var(--point-yellow-opaque) 100%
   ); /* direction, color-stop1, color-stop2 */
   background-position: 0 calc(100% - 5px); /* 밑줄 위치 */
   background-size: 0 26px; /* 밑줄 높이 */
@@ -102,6 +113,10 @@ svg {
   }
 }
 @media (max-width: 1024px) {
+  body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+      url("/images/profile/profile-3.jpg");
+  }
   section {
     padding: 0 4rem;
   }
