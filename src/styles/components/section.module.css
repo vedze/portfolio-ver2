@@ -12,11 +12,11 @@
   font-weight: bold;
 
   &:nth-child(1) {
-    color: #959595;
+    color: var(--bright-grey);
   }
 
   &:nth-child(2) {
-    color: #4e4e4e;
+    color: var(--dark-grey);
   }
 }
 

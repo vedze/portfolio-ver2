@@ -18,11 +18,11 @@
 
 .msg.copied,
 .msg.success {
-  color: rgb(85, 160, 97);
+  color: var(--global-green);
 }
 
 .msg.fail {
-  color: rgba(214, 59, 59, 0.8);
+  color: var(--global-red);
 }
 
 /* media query */
