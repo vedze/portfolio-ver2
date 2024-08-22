@@ -14,7 +14,7 @@
 
 .headerLogo {
   font-size: 45px;
-  color: var(--point-yellow);
+  color: var(--point-color);
 
   font-family: var(--font-overpass);
   font-weight: 600;

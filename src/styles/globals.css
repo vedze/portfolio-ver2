@@ -5,10 +5,10 @@
 }
 
 :root {
-  --point-yellow: rgb(205, 175, 24);
-  --point-yellow-opaque: rgba(205, 175, 24, 0.7);
+  --point-color: #5f8723;
+  --point-color-opaque: rgba(122, 169, 52, 0.7);
 
-  --global-green: #5f8723;
+  --global-green: rgb(95, 135, 35);
   --global-red: rgb(214, 59, 59);
 
   --dark-grey: #666;
@@ -90,8 +90,8 @@ svg {
 
   background: linear-gradient(
     to right,
-    var(--point-yellow-opaque) 0%,
-    var(--point-yellow-opaque) 100%
+    var(--point-color-opaque) 0%,
+    var(--point-color-opaque) 100%
   ); /* direction, color-stop1, color-stop2 */
   background-position: 0 calc(100% - 5px); /* 밑줄 위치 */
   background-size: 0 26px; /* 밑줄 높이 */
@@ -113,6 +113,10 @@ svg {
   }
 }
 @media (max-width: 1024px) {
+  :root {
+    --point-color: rgb(205, 175, 24);
+    --point-color-opaque: rgba(205, 175, 24, 0.7);
+  }
   body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
       url("/images/profile/profile-3.jpg");
