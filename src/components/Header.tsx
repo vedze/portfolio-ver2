@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <div className={styles.header}>
       <Link href="#" className={styles.headerLogo}>
-        LEE JI EUN
+        eeez.
       </Link>
       <div className={styles.headerMenu}>
         <Link href="#project">PROJECT</Link>
