@@ -32,7 +32,9 @@ export const studyData: Study[] = [
     lists: [
       {
         name: "Java",
-        expl: "백엔드의 구조와 원리에 대한 깊은 이해를 바탕으로 더욱 효율적이고 안정적인 웹 개발을 목표로 하고 있습니다.",
+        expl:
+          "백엔드의 구조와 원리에 대한 깊은 이해를 바탕으로 더욱 효율적이고 안정적인 웹 개발을 목표로 하고 있습니다.\n" +
+          "추후 spring & spring boot 학습을 통해 온전한 웹 페이지를 직접 제작해보려 합니다.",
       },
       {
         name: "Express",
