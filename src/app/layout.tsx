@@ -20,7 +20,10 @@ const overpass = Overpass({
 
 export const metadata: Metadata = {
   title: "이지은 | 포트폴리오",
-  description: "안녕하세요 포트폴리오 ver2 입니다.",
+  description: "안녕하세요! 가치를 쌓아가는 개발자 이지은 입니다.",
+  icons: {
+    icon: "images/favicon.ico",
+  },
 };
 
 export default function RootLayout({
