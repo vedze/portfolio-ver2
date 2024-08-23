@@ -7,7 +7,6 @@
 .yarn/install-state.gz
 
 # personal images
-/public/images/profile
 /public/images/projects
 
 # testing
