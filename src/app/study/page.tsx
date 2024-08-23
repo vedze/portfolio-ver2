@@ -6,7 +6,7 @@ import { INTRO } from "@/data/constants";
 export default function StudyPage() {
   return (
     <div id="study" className={styles.commonPage}>
-      <Section num="02" name="STUDY" intro={INTRO.studyIntro} />
+      <Section num="02" name="STUDY" />
       <StudyContent />
     </div>
   );
