@@ -4,6 +4,17 @@
   box-sizing: border-box;
 }
 
+:root {
+  --point-color: #5f8723;
+  --point-color-opaque: rgba(122, 169, 52, 0.7);
+
+  --global-green: rgb(95, 135, 35);
+  --global-red: rgb(214, 59, 59);
+
+  --dark-grey: #666;
+  --bright-grey: #aaa;
+}
+
 html,
 body {
   height: 100%;
@@ -44,7 +55,7 @@ section {
 }
 
 footer {
-  color: #4e4e4e;
+  color: var(--dark-grey);
   font-size: 18px;
   text-align: center;
 
@@ -71,12 +82,45 @@ svg {
   margin-right: 10px;
 }
 
+/* 형광펜 효과 */
+.highlighter {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: inherit;
+
+  background: linear-gradient(
+    to right,
+    var(--point-color-opaque) 0%,
+    var(--point-color-opaque) 100%
+  ); /* direction, color-stop1, color-stop2 */
+  background-position: 0 calc(100% - 5px); /* 밑줄 위치 */
+  background-size: 0 26px; /* 밑줄 높이 */
+  background-repeat: no-repeat;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-size: 100% 26px;
+    font-weight: 600;
+    text-decoration-thickness: 2px;
+  }
+
+  cursor: pointer;
+}
+
 @media (max-width: 1280px) {
   section {
     padding: 0 5.5rem;
   }
 }
 @media (max-width: 1024px) {
+  :root {
+    --point-color: rgb(205, 157, 24);
+    --point-color-opaque: rgba(221, 178, 26, 0.7);
+  }
+  body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+      url("/images/profile/profile-3.jpg");
+  }
   section {
     padding: 0 4rem;
   }

@@ -12,11 +12,11 @@
   font-weight: bold;
 
   &:nth-child(1) {
-    color: #959595;
+    color: var(--bright-grey);
   }
 
   &:nth-child(2) {
-    color: #4e4e4e;
+    color: var(--dark-grey);
   }
 }
 
@@ -25,4 +25,27 @@
   font-size: 20px;
   color: #7f7f7f;
   white-space: pre-line; /* 줄바꿈 */
+  word-break: keep-all;
+}
+
+@media (max-width: 1280px) {
+  .section span {
+    font-size: 17px;
+  }
+}
+@media (max-width: 1024px) {
+  .section span {
+    font-size: 15px;
+  }
+  .intro {
+    font-size: 18px;
+  }
+}
+@media (max-width: 576px) {
+  .section span {
+    font-size: 13px;
+  }
+  .intro {
+    font-size: 16px;
+  }
 }

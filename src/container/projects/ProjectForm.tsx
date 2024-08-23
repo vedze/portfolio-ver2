@@ -19,7 +19,7 @@ export default function Project({ project }: ProjectProps) {
 
       <div className={styles.summarySection}>
         <div className={styles.details}>
-          <h2>프로젝트 소개</h2>
+          <h2>프로젝트 개요</h2>
           {project.details.map((detail, i) => (
             <p key={i}>
               <FiCheck />
@@ -36,7 +36,9 @@ export default function Project({ project }: ProjectProps) {
           {project.links?.map((link, i) => (
             <p key={i}>
               <IoLinkOutline />
-              <Link href={link.url}>{link.name}</Link>
+              <Link href={link.url} className="highlighter">
+                {link.name}
+              </Link>
             </p>
           ))}
         </div>
